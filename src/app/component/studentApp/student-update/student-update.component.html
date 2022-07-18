@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">
+    New Student
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="mb-3">
+        <label  class="form-label">Student Name </label>
+        <input type="text" class="form-control" [value]="studentObg.studentName" [(ngModel)]="studentObg.studentName" name="studentName">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Student City</label>
+        <input type="text" class="form-control" [(ngModel)]="studentObg.studentCity" name="studentCity">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Student Mobile</label>
+        <input type="text" class="form-control" [(ngModel)]="studentObg.studentMobile" name="studentMobile">
+      </div>
+
+      <button type="submit" (click)="updateStudent()" class="btn btn-primary">Update</button>
+    </form>
+</div>
+  </div>

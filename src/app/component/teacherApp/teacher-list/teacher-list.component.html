@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active btn btn-primary" aria-current="page" routerLink="/teacherNew">Add Teacher</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Teacher ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Course</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let teacher of teacherlist;let i= index">
+          <td>{{ i+1 }}</td>
+          <td>{{ teacher.teacherName | titlecase}}</td>
+          <td>{{ teacher.teacherCity | titlecase}}</td>
+          <td>{{ teacher.teacherMobile}}</td>
+          <td>
+              <li *ngFor="let item of teacher.teacherCourse |  slice: 0 " >{{ item }}</li>
+          </td>
+          <td>
+                <button type="button" class="btn btn-outline-primary me-2" [routerLink]="['/teacherUpdate',teacher.teacherId]">Edit</button>
+                <button type="button" class="btn btn-outline-danger" (click)="delete(teacher.teacherId)">Delete </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

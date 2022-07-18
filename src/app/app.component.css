@@ -1,0 +1,13 @@
+.navbar-nav .nav-link.active{
+  color: #fff;
+  font-size: 20px;
+}
+.active-link{
+  background-color: #a7670f;
+  border-radius: 25px;
+}
+nav .time{
+  width: 20%;
+  color: #fff;
+  font-size: 15px;
+}

@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    New Student
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="mb-3">
+        <label  class="form-label">Student Name </label>
+        <input type="text" class="form-control" [(ngModel)]="studentObg.studentName" name="studentName">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Student City</label>
+        <input type="text" class="form-control" [(ngModel)]="studentObg.studentCity" name="studentCity">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Student Mobile</label>
+        <input type="text" class="form-control" [(ngModel)]="studentObg.studentMobile" name="studentMobile">
+      </div>
+      <div class="mb-3">
+      <!-- <input type="hidden" required   [placeholder]="dateModel | date:'yyyy-MM-dd HH:mm:ss'" [value]="dateModel | date:'yyyy-MM-dd HH:mm'" [(ngModel)]="studentObg.updateAt" name="updateAt"> -->
+    </div>
+      <button id="btnSubmit"  type="submit" (click)="saveStudent()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+  </div>

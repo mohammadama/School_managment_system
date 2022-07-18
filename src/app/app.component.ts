@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  dateModel: Date;
   title = 'school_system';
+  constructor() {
+
+    this.dateModel = new Date();
+  }
 }

@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-header">
+    New Teacher
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="mb-3">
+        <label  class="form-label">Teacher Name </label>
+        <input type="text" class="form-control" [value]="teacherObg.teacherName" [(ngModel)]="teacherObg.teacherName" name="teacherName">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Teacher City</label>
+        <input type="text" class="form-control" [(ngModel)]="teacherObg.teacherCity" name="teacherCity">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Teacher Mobile</label>
+        <input type="text" class="form-control" [(ngModel)]="teacherObg.teacherMobile" name="teacherMobile">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Teacher Course</label>
+        <select class="form-control selectpicker" multiple [(ngModel)]="teacherObg.teacherCourse" name="teacherCourse">
+          <option *ngFor="let course of courselist " [value]="course.courseName">{{ course.courseName }}</option>
+        </select>
+      </div>
+
+      <button type="submit" (click)="updateTeacher()" class="btn btn-primary">Update</button>
+    </form>
+</div>
+  </div>
+<script>
+  $('select').selectpicker();
+</script>
