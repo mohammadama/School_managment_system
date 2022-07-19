@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input, OnChanges,SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
+import { Component, OnInit ,Input, OnChanges,SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, Output ,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +7,9 @@ import { Component, OnInit ,Input, OnChanges,SimpleChanges, DoCheck, AfterConten
 })
 export class HomeComponent implements OnInit, OnChanges ,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
 
-  // child
+
   @Input() change:any;
+
   ngOnChanges(changes: SimpleChanges): void {
     console.log('changes is', changes)
   }

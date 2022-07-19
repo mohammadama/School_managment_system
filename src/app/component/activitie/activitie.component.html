@@ -1,0 +1,8 @@
+<!-- @input and @output -->
+<div class="parent">
+  <h2>Parent Component</h2>
+  <ul>
+    <li *ngFor="let activ of activities">{{ activ }}</li>
+  </ul>
+  <app-activitie-child [activitie]="currentActivitie" (newActivitieEvent)="addActivitie($event)"></app-activitie-child>
+</div>

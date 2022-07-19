@@ -5,7 +5,7 @@
       <span class="navbar-brand" href="#">School managment system </span>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="student/studentList">Students List</a>
+          <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="/studentList">Students List</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="/teacherList">Teachers List</a>
@@ -13,14 +13,21 @@
         <li class="nav-item">
           <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="/courseList">Courses List</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="/admin/login"> Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="/activitie"> activitie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLinkActive="active-link" aria-current="page" routerLink="/admin/list"> List</a>
+        </li>
       </ul>
     </div>
   </div>
   <span class="time">{{ dateModel | date:'short' }}</span>
 </nav>
 <router-outlet></router-outlet>
-
 <br>
 <br>
-
 

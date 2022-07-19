@@ -7,15 +7,13 @@ import { studentObg } from 'src/app/interfaces/student';
 })
 export class StudentListComponent implements OnInit {
 
-  myChange = 'Not Change';
   studentlist: studentObg [];
+
+  myChange = 'Not Change';
+
+
   constructor() {
     this.studentlist = [];
-
-    // for OnDestroy
-    setTimeout(() => {
-      this.myChange='';
-    }, 3000);
   }
 
   ngOnInit(): void {

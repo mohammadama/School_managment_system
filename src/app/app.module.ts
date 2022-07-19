@@ -17,7 +17,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './services/auth.interceptor';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { ActivitieComponent } from './component/activitie/activitie.component';
+import { ActivitieChildComponent } from './component/activitie-child/activitie-child.component'
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown'
     CourseUpdateComponent,
     NotFoundComponent,
     HomeComponent,
+    ActivitieComponent,
+    ActivitieChildComponent,
   ],
   imports: [
     BrowserModule,

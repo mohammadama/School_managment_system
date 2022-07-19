@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   dateModel: Date;
   title = 'school_system';
+
   constructor() {
 
     this.dateModel = new Date();
